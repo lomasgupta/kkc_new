@@ -1,0 +1,84 @@
+<div class="container-fluid">
+  <app-header></app-header>
+  <section class="home">
+    <div class="intro1">
+      <div class="intro1--content">
+        <div class="intro1--text">
+          <h3>Create your break</h3>
+          <p class="text2">Donec pede justo fringilla velc Donec pede.</p>
+        </div>
+        <div class="intro1--btn"><a routerLink="select-fingers" class="btn btn-primary btn-mobile">Discover More</a></div>
+      </div>
+    </div>
+    <div class="section-title pick text-center">
+      <h4>Pick your favourite Choclate</h4>
+    </div>
+    <div class="push-multiple row text-center section-two">
+      <div class="push-multiple--content col-sm-4">
+        <div class="push-multiple--image"><img src="../assets/milk-chocolate.png" /></div>
+        <h6>Milk Chocolate</h6>
+        <p class="text3">Lorem ipsum dolor sit amet facer tomquam corpora duo am</p>
+      </div>
+      <div class="push-multiple--content col-sm-4">
+        <div class="push-multiple--image"><img src="../assets/dark-chocolate.png" /></div>
+        <h6>Dark Chocolate</h6>
+        <p class="text3">Lorem ipsum dolor sit amet facer tomquam corpora duo am</p>
+      </div>
+      <div class="push-multiple--content col-sm-4">
+        <div class="push-multiple--image"><img src="../assets/white-chocolate.png" /></div>
+        <h6>White Chocolate</h6>
+        <p class="text3">Lorem ipsum dolor sit amet facer tomquam corpora duo am</p>
+      </div>
+      <div class="push-multiple--action col-sm-12 text-center">
+        <a routerLink="select-fingers" class="btn btn-primary">Get Started</a>
+      </div>
+    </div>
+    <div class="push-single section-three">
+      <div class="push-single--image"><img src="../assets/meet-our-chocolate.png" alt="Chocolate" /></div>
+      <div class="push-single--content">
+        <h4>Meet our chocolatiers</h4>
+        <p class="text3">Lorem ipsum dolor sit amet facer tomquam corpora duo am. Lorem ipsum dolor sit amet facer tomquam corpora duo am</p>
+        <div class="push-single--action">
+          <a routerLink="select-fingers" class="btn-tertiary btn">Get Started</a>
+        </div>
+      </div>
+    </div>
+    <div class="section-title text-center">
+      <h4>Check out our range of ingredients</h4>
+    </div>
+    <div class="carousel">
+      <owl-carousel [options]='{items: 1, dots: false, nav:true, loop:true}' [items]="images" [carouselClasses]="['owl-theme', '','sliding']">
+        <div class="item" *ngFor="let slide of slides">
+          <img src="{{slide.image}}" />
+          <p class="text3 text-center carousel--text">{{slide.text}}</p>
+        </div>
+      </owl-carousel>
+      <div class="text-center">
+        <a routerLink="select-fingers" class="btn-primary btn">Get Started</a>
+      </div>
+    </div>
+    <div class="push-single section-four">
+      <div class="push-single--image"><img src="../assets/customize.png" alt="packaging" /></div>
+      <div class="push-single--content">
+        <h4>Customize your own bespoke Kitkat box</h4>
+        <p class="text3">Lorem ipsum dolor sit amet facer tomquam corpora duo am. Lorem ipsum dolor sit amet facer tomquam corpora duo am</p>
+        <div class="push-single--action">
+          <a routerLink="select-fingers" class="btn-primary btn">Get Started</a>
+        </div>
+      </div>
+    </div>
+    <!-- promo -->
+    <div class="promo w-b bg-gray section-five">
+      <h4>Free shipping on orders of 20+</h4>
+      <a href="#" class="btn btn-tertiary">Learn more</a>
+    </div>
+    <div class="promo bg-red section-six">
+      <h4>Make your own bespoke kitkat today</h4>
+      <p class="text2">Lorem ipsum dolor sit amet facer tomquam corpora duo am.</p>
+      <div class="promo-action text-center">
+        <a routerLink="select-fingers" class="btn btn-secondary btn-mobile">Get Started</a>
+      </div>
+    </div>
+  </section>
+  <app-footer></app-footer>
+</div>

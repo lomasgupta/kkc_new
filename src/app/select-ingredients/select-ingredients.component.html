@@ -1,0 +1,35 @@
+<div class="page-inner">
+  <ul class="steps">
+    <li class="active"><a href=""></a></li>
+    <li class="active"><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+  </ul>
+  <h4 class="title space-wrap">Select up to 3 ingredients</h4>
+  <form #ingredientForm="ngForm" class="editForm" novalidate>
+    <div class="card space-wrap">
+      <div class="card--content">
+        <input type="checkbox" #ingredient="ngModel" required [(ngModel)]="ingredientType" name="select" id="select4" />
+        <label for="select4"></label>
+        <p>Dried Raspberies</p>
+      </div>
+      <div class="card--content">
+        <input type="checkbox" #ingredient="ngModel" required [(ngModel)]="ingredientType" name="select" id="select8" />
+        <label for="select8"></label>
+        <p class="price">Sticky Caramalised Popcorn</p>
+      </div>
+      <div class="card--content">
+        <input type="checkbox" #ingredient="ngModel" required [(ngModel)]="ingredientType" name="select" id="select" />
+        <label for="select"></label>
+        <p class="price">Crushed Cocoa Nibs</p>
+      </div>
+      <div class="card--content">
+        <input type="checkbox" #ingredient="ngModel" required [(ngModel)]="ingredientType" name="select" id="select1" />
+        <label for="select1"></label>
+        <p class="price">Fragrant Rose Petals</p>
+      </div>
+    </div>
+    <button type="button" [routerLink]="['/cutomize-package']" class="btn btn-mobile btn-primary">Next: Ingredients</button>
+  </form>
+</div>

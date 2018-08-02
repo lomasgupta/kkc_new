@@ -1,0 +1,17 @@
+/*------------------------------------*\
+    #BODY
+\*------------------------------------*/
+
+/**
+ * Body base styles
+ */
+body {
+  
+}
+
+a {
+  color: $color-black;
+  &:hover {
+    color: $color-black;
+  }
+}

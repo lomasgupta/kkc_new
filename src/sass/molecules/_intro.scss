@@ -1,0 +1,23 @@
+.intro1 {
+  position: relative;
+  background: url(http://via.placeholder.com/1920x800?text=.);
+  background-size: cover;
+  height: 440px;
+  background-position: center;
+  .intro1--text {
+    padding-bottom: 12px;
+    color: $color-black;
+  }
+  .intro1--btn {
+    padding-bottom: 32px;
+  }
+}
+.intro1--content {
+  position: absolute;
+  top: 30%;
+  padding: 0 30px;
+}
+
+.intro1 img {
+
+}

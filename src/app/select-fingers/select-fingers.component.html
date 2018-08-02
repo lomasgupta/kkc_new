@@ -1,0 +1,69 @@
+<div class="page-inner">
+  <ul class="steps">
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+  </ul>
+
+  <h4 class="title space-wrap">How many kitkat fingers would you like?</h4>
+  <form #fingerForm="ngForm" class="editForm" novalidate>
+    <div class="card space-wrap">
+      <div class="card--content">
+         <input type="radio" #finger="ngModel" required name="finger" [(ngModel)]="fingerType" value="Finger4" id="select4">
+         <label for="select4"></label>
+        <div class="card--count">4</div>
+        <p class="">Fingers</p>
+        <p class="price">5.00</p>
+      </div>
+      <div class="card--content">
+        <input type="radio" #finger="ngModel" required name="finger" [(ngModel)]="fingerType" value="Finger8" id="select8">
+        <label for="select8"></label>
+        <div class="card--count">8</div>
+        <p>Fingers</p>
+        <p class="price">5.00</p>
+      </div>
+    </div>
+    <button type="button" [disabled]="!fingerForm.valid" (click)="goToNext(fingerForm)" class="btn btn-mobile btn-primary">Next: Chocolate</button>
+  </form>
+</div>
+
+
+<!-- <form #workForm="ngForm" class="editForm" novalidate>
+    <div class="form-horizontal">
+        <div class="tab-pane fade in active">
+            <h4 class="head text-center">{{title}}</h4>
+            <br/>
+            <div class='row'>
+                <div class='col-xs-offset-4 col-xs-10 col-sm-offset-5 col-sm-4'>
+                    <div class="form-group">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" #finger="ngModel" required name="work" [(ngModel)]="workType" value="Design">
+                                Design
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" #finger="ngModel" required name="work" [(ngModel)]="workType" value="Code">
+                                Code
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" #finger="ngModel" required name="work" [(ngModel)]="workType" value="Deploy">
+                                Deploy
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group text-center space-20">
+                <button class="btn btn-outline-rounded btn-default" (click)="goToPrevious(workForm)"> <span style="margin-right:10px;" class="glyphicon glyphicon-arrow-left"></span> Previous</button>
+                <button class="btn btn-outline-rounded btn-info" [disabled]="!workForm.valid" (click)="goToNext(workForm)"> Next <span style="margin-left:10px;" class="glyphicon glyphicon-arrow-right"></span></button>
+            </div>
+        </div>
+    </div>
+</form>
+ -->

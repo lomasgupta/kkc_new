@@ -1,0 +1,7 @@
+export const STEPS = {
+    finger: 'select-fingers',
+    chocolate: 'select-chocolate',
+    ingredient: 'select-ingredients',
+    package: 'cutomize-package',
+    message: 'message'
+}

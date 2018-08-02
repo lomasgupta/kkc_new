@@ -1,0 +1,34 @@
+<div class="page-inner">
+  <ul class="steps">
+    <li class="active"><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+  </ul>
+  <h4 class="title space-wrap">Please select your chocolate</h4>
+  <form #chocolateForm="ngForm" class="editForm" novalidate>
+    <div class="card card-v space-wrap">
+      <div class="card--content">
+        <input type="radio" name="select" id="select4" />
+        <input type="radio" #chocolate="ngModel" required name="chocolate" [(ngModel)]="chocolateType" value="Light Chocolate" id="1">
+        <label for="1"></label>
+        <img src="http://via.placeholder.com/50x50" class="img-round" />
+        <p class="text3">Light Chocolate</p>
+      </div>
+      <div class="card--content">
+        <input type="radio" #chocolate="ngModel" required name="chocolate" [(ngModel)]="chocolateType" value="Dark Chocolate" id="2">
+        <label for="2"></label>
+        <img src="http://via.placeholder.com/50x50" class="img-round" />
+        <p class="text3">Dark Chocolate</p>
+      </div>
+      <div class="card--content">
+        <input type="radio" #chocolate="ngModel" required name="chocolate" [(ngModel)]="chocolateType" value="White Chocolate" id="3">
+        <label for="3"></label>
+        <img src="http://via.placeholder.com/50x50" class="img-round" />
+        <p class="text3">White Chocolate</p>
+      </div>
+    </div>
+    <button type="button" [disabled]="!chocolateForm.valid" (click)="goToNext(chocolateForm)" class="btn btn-mobile btn-primary">Next: Ingredients</button>
+  </form>
+</div>

@@ -1,0 +1,119 @@
+/*------------------------------------*\
+    #GLOBAL CLASSES
+\*------------------------------------*/
+
+/**
+ * Completely remove from the flow and screen readers.
+ */
+.is-hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/**
+ * Completely remove from the flow but leave available to screen readers.
+ */
+.is-vishidden {
+    position: absolute !important;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+/**
+ * Text align right
+ */
+.align-right {
+  text-align: right;
+}
+
+/**
+ * Text align center
+ */
+.align-center {
+  text-align: center;
+}
+
+/**
+ * Text Align left
+ */
+.align-left {
+  text-align: left;
+}
+
+/**
+ * Hide on small screens
+ */
+.hide-small {
+    @media all and (max-width: 767px) {
+        display: none;
+    }
+}
+
+/**
+ * Hide on medium screens
+ */
+.hide-med {
+    @media all and (min-width: 768px) and (max-width: 1200px) {
+        display: none;
+    }
+}
+
+/**
+ * Hide on large screens
+ */
+.hide-large {
+    @media all and (min-width: 1200px) {
+        display: none;
+    }
+}
+
+/**
+ * Show valid text color
+ */
+.valid {
+  color: $color-positive;
+}
+
+/**
+ * Show error text color
+ */
+.error {
+  color: $color-negative;
+}
+
+/**
+ * Show warning text color
+ */
+.warning {
+  color: $color-warning;
+}
+
+/**
+ * Show informational text color
+ */
+.information {
+  color: $color-information;
+}
+
+/**
+ * Display secondary font family
+ */
+.font-secondary {
+  font-family: $ff-secondary;
+}
+
+.bg-gray {
+  background: $color-gray01;
+}
+
+.bg-red {
+  background: $color-red;
+}
+
+.space-wrap {
+  padding: 0 30px;
+}

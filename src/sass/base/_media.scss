@@ -1,0 +1,39 @@
+/*------------------------------------*\
+    #MEDIA ELEMENTS
+\*------------------------------------*/
+
+/**
+ * Make media elements responsive
+ */
+img, video, object {
+  max-width: 100%;
+  height: auto;
+}
+
+/**
+ * Iframe base styles
+ */
+iframe {
+  margin-bottom: 10px;
+}
+
+/**
+ * Figure base styles
+ */
+figure {
+  margin-bottom: 10px;
+  
+  /**
+   * Figure image base styles
+   */
+  img {
+    margin-bottom: 5px;
+  }
+}
+
+/**
+ * Figure caption base styles
+ */
+figcaption {
+  font-style: italic;
+}

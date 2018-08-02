@@ -1,0 +1,39 @@
+.push-single {
+  .push-single--image {
+    padding-bottom: 32px;
+  }
+  h4 {
+    padding-bottom: 16px;
+  }
+  p {
+    padding-bottom: 16px;
+  }
+  .push-single--action {
+    padding-bottom: 32px;
+  }
+}
+
+.push-single--content {
+  padding: 0 30px;
+}
+.push-multiple {
+  .push-multiple--image {
+    padding-bottom: 32px;
+    /** needs to remove after getting proper image**/
+    img {
+      width: 50%;
+    }
+  }
+  h5 {
+    padding-bottom: 16px;
+  }
+  p {
+    
+  }
+  .push-multiple--action {
+    padding-bottom: 32px;
+  }
+}
+.push-multiple--content {
+  margin-bottom: 50px;
+}

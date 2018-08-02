@@ -1,0 +1,23 @@
+.page-inner {
+  .title {
+    margin: 40px 0;
+  }
+  form {
+    @media(min-width: 768px) {
+      text-align: center;
+    }
+    button {
+      margin-top: 50px;
+    }
+  }
+  .owl-package {
+    margin-bottom: 50px;
+  }
+}
+
+.review {
+  padding: 30px 0px;
+  textarea {
+    border: 0 none;
+  }
+}

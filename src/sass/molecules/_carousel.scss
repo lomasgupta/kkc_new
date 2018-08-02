@@ -1,0 +1,30 @@
+.owl-package {
+  .owl-item {
+    background: $color-white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 0;
+  }
+  p {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+}
+
+div.carousel {
+  .carousel--text {
+    margin-top: 30px;
+  }
+  .owl-nav {
+    margin-bottom: 25px;
+    button[class*='owl-'] {
+      font-size: 45px !important;
+      &:hover, &:focus {
+        background: none;
+        color: inherit;
+        outline: 0;
+      }
+    }
+  }
+}

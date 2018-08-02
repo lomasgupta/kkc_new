@@ -1,11 +1,13 @@
 export class FormData {
     finger: string = '';
     chocolate: string = '';
-    ingredient: string = '';
+    ingredient: any = {};
+    message: string = '';
     clear() {
         this.finger = '';
         this.chocolate = '';
         this.ingredient = '';
+        this.message = '';
     }
 }
 

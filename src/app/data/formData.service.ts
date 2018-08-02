@@ -11,6 +11,7 @@ export class FormDataService {
     private isFingerFormValid: boolean = false;
     private isChocolateFormValid: boolean = false;
     private isIngredientFormValid: boolean = false;
+    private isMessageFormValid: boolean = false;
 
     constructor(private workflowService: WorkflowService) {
     }
@@ -27,6 +28,20 @@ export class FormDataService {
         // Validate Work Step in Workflow
         this.workflowService.validateStep(STEPS.finger);
     }
+
+    getMessage() : string {
+        // Return the work type
+        return this.formData.message;
+    }
+
+    setMessage(data: string) {
+        // Update the work type only when the Work Form had been validated successfully
+        this.isMessageFormValid = true;
+        this.formData.message = data;
+        // Validate Work Step in Workflow
+        this.workflowService.validateStep(STEPS.message);
+    }
+
     getChocolate() : string {
         // Return the work type
         return this.formData.chocolate;
@@ -39,12 +54,12 @@ export class FormDataService {
         // Validate Work Step in Workflow
         this.workflowService.validateStep(STEPS.chocolate);
     }
-    getIngredient() : string {
+    getIngredient() : any {
         // Return the work type
         return this.formData.ingredient;
     }
 
-    setIngredient(data: string) {
+    setIngredient(data: any) {
         // Update the work type only when the Work Form had been validated successfully
         this.isIngredientFormValid = true;
         this.formData.ingredient = data;
@@ -67,6 +82,6 @@ export class FormDataService {
 
     isFormValid() {
         // Return true if all forms had been validated successfully; otherwise, return false
-        return this.isFingerFormValid && this.isChocolateFormValid && this.isIngredientFormValid;
+        return this.isFingerFormValid && this.isMessageFormValid && this.isChocolateFormValid && this.isIngredientFormValid;
     }
 }

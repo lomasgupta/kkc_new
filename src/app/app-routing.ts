@@ -13,7 +13,7 @@ const routes: Routes = [
   {path: 'select-fingers', component: SelectFingersComponent},
   {path: 'select-chocolate', component: SelectChocolateComponent},
   {path: 'select-ingredients', component: SelectIngredientsComponent},
-  {path: 'cutomize-package', component: CustomizePackagingComponent},
+  {path: 'customize-package', component: CustomizePackagingComponent},
   {path: 'message', component: MessageComponent},
   {path: 'review', component: ReviewComponent},
   {path: '', component: HomeComponent},

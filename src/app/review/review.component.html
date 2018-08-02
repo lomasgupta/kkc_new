@@ -10,51 +10,43 @@
   <div class="review">
     <div class="review--content">
       <span class="review--name">Size</span>
-      <a href="#" class="review--action">change</a>
+      <a routerLink="/select-fingers" class="review--action">change</a>
     </div>
     <div class="card card-v">
       <div class="card--content">
         <div class="card--count">8</div>
-        <p class="text3">8 fingers</p>
+        <p class="text3">{{formData.finger}}</p>
       </div>
     </div>
   </div>
   <div class="review">
     <div class="review--content">
       <span class="review--name">Chocolate</span>
-      <a href="#" class="review--action">change</a>
+      <a routerLink="/select-chocolate" class="review--action">change</a>
     </div>
     <div class="card card-v">
       <div class="card--content">
         <img src="http://via.placeholder.com/50x50" class="img-round" />
-        <p class="text3">Light Chocolate</p>
+        <p class="text3">{{formData.chocolate}}</p>
       </div>
     </div>
   </div>
   <div class="review">
     <div class="review--content">
       <span class="review--name">Ingredients</span>
-      <a href="#" class="review--action">change</a>
+      <a routerLink="/select-ingredients" class="review--action">change</a>
     </div>
     <div class="card card-v">
-      <div class="card--content">
+      <div class="card--content" *ngFor = "let item of formData.ingredient | keyvalue">
         <img src="http://via.placeholder.com/50x50" class="img-round" />
-        <p class="text3">Sticky Caramalised Popcorn</p>
-      </div>
-      <div class="card--content">
-        <img src="http://via.placeholder.com/50x50" class="img-round" />
-        <p class="text3">Caramelised Pistachios</p>
-      </div>
-      <div class="card--content">
-        <img src="http://via.placeholder.com/50x50" class="img-round" />
-        <p class="text3">Salted Caramel Chunks</p>
+        <p class="text3">{{item.key}}</p>
       </div>
     </div>
   </div>
   <div class="review space-wrap">
     <div class="review--content">
       <span class="review--name">Packaging</span>
-      <a href="#" class="review--action">change</a>
+      <a routerLink="/customize-package" class="review--action">change</a>
     </div>
     <div class="card card-v">
       <div class="card--content">
@@ -66,10 +58,10 @@
   <div class="review">
     <div class="review--content">
       <span class="review--name">Message</span>
-      <a href="#" class="review--action"></a>
+      <a class="review--action"></a>
     </div>
     <form>
-      <textarea>Happy birthday hope you have a great day ;)</textarea>
+      <textarea>{{formData.message}}</textarea>
     </form>
   </div>
   <form>

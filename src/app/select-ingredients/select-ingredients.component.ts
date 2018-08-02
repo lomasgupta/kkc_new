@@ -8,7 +8,7 @@ import { FormDataService }     from '../data/formData.service';
 })
 export class SelectIngredientsComponent implements OnInit {
   title = 'What do you do?';
-  ingredientType: string;
+  ingredientType: any;
   form: any;
 
   constructor(private router: Router, private formDataService: FormDataService) { }
@@ -17,7 +17,7 @@ export class SelectIngredientsComponent implements OnInit {
     this.ingredientType = this.formDataService.getIngredient();
       console.log('Work feature loaded!');
   }
-
+   options = ["test", "test1", "test2"]
   save(form: any): boolean {
     if (!form.valid) {
         return false;
@@ -29,7 +29,7 @@ export class SelectIngredientsComponent implements OnInit {
     goToNext(form: any) {
       if (this.save(form)) {
         // Navigate to the address page
-        this.router.navigate(['/customize-packaging']);
+        this.router.navigate(['/message']);
       }
     }
 

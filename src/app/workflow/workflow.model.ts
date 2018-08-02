@@ -2,6 +2,6 @@ export const STEPS = {
     finger: 'select-fingers',
     chocolate: 'select-chocolate',
     ingredient: 'select-ingredients',
-    package: 'cutomize-package',
+    package: 'customize-package',
     message: 'message'
 }
